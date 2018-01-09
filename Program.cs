@@ -27,11 +27,11 @@ namespace palindrome
 
             if (getFirst(sVal) != getLast(sVal))
             {
-                //current first and last match
-                //get the midsection and call again
+                //current first and last do not match- no palindrome
                 return false;
             }
-
+            
+            //match- call without two outer numbers
             return isPalindrome(getMid(sVal));
 
         }
